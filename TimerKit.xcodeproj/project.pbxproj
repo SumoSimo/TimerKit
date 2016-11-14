@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5E13074E1DDA8310006A61E5 /* TimerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1307441DDA8310006A61E5 /* TimerKit.framework */; };
-		5E1307531DDA8310006A61E5 /* TimerKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1307521DDA8310006A61E5 /* TimerKitTests.swift */; };
 		5E1307551DDA8310006A61E5 /* TimerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1307471DDA8310006A61E5 /* TimerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -27,7 +26,6 @@
 		5E1307471DDA8310006A61E5 /* TimerKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerKit.h; sourceTree = "<group>"; };
 		5E1307481DDA8310006A61E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E13074D1DDA8310006A61E5 /* TimerKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimerKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E1307521DDA8310006A61E5 /* TimerKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerKitTests.swift; sourceTree = "<group>"; };
 		5E1307541DDA8310006A61E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,7 +78,6 @@
 		5E1307511DDA8310006A61E5 /* TimerKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				5E1307521DDA8310006A61E5 /* TimerKitTests.swift */,
 				5E1307541DDA8310006A61E5 /* Info.plist */,
 			);
 			path = TimerKitTests;
@@ -205,7 +202,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E1307531DDA8310006A61E5 /* TimerKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
