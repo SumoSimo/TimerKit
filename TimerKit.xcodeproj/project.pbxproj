@@ -12,6 +12,8 @@
 		5EA59B7C1DDD7450006F48D5 /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA59B7B1DDD7450006F48D5 /* CountdownTimer.swift */; };
 		5EA59B7E1DDD7519006F48D5 /* DayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA59B7D1DDD7519006F48D5 /* DayTests.swift */; };
 		5EA59B801DDD7543006F48D5 /* Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA59B7F1DDD7543006F48D5 /* Days.swift */; };
+		5EA59B821DDD7686006F48D5 /* HourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA59B811DDD7686006F48D5 /* HourTests.swift */; };
+		5EA59B841DDD76B7006F48D5 /* Hours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA59B831DDD76B7006F48D5 /* Hours.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,8 @@
 		5EA59B7B1DDD7450006F48D5 /* CountdownTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownTimer.swift; sourceTree = "<group>"; };
 		5EA59B7D1DDD7519006F48D5 /* DayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayTests.swift; sourceTree = "<group>"; };
 		5EA59B7F1DDD7543006F48D5 /* Days.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Days.swift; sourceTree = "<group>"; };
+		5EA59B811DDD7686006F48D5 /* HourTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourTests.swift; sourceTree = "<group>"; };
+		5EA59B831DDD76B7006F48D5 /* Hours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hours.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 				5E1307481DDA8310006A61E5 /* Info.plist */,
 				5EA59B7B1DDD7450006F48D5 /* CountdownTimer.swift */,
 				5EA59B7F1DDD7543006F48D5 /* Days.swift */,
+				5EA59B831DDD76B7006F48D5 /* Hours.swift */,
 			);
 			path = TimerKit;
 			sourceTree = "<group>";
@@ -88,6 +93,7 @@
 			children = (
 				5E1307541DDA8310006A61E5 /* Info.plist */,
 				5EA59B7D1DDD7519006F48D5 /* DayTests.swift */,
+				5EA59B811DDD7686006F48D5 /* HourTests.swift */,
 			);
 			path = TimerKitTests;
 			sourceTree = "<group>";
@@ -207,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EA59B7C1DDD7450006F48D5 /* CountdownTimer.swift in Sources */,
+				5EA59B841DDD76B7006F48D5 /* Hours.swift in Sources */,
 				5EA59B801DDD7543006F48D5 /* Days.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EA59B7E1DDD7519006F48D5 /* DayTests.swift in Sources */,
+				5EA59B821DDD7686006F48D5 /* HourTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
