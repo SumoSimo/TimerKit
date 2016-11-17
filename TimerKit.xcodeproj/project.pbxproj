@@ -16,6 +16,8 @@
 		5EA59B841DDD76B7006F48D5 /* Hours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA59B831DDD76B7006F48D5 /* Hours.swift */; };
 		5EA59B861DDD77BD006F48D5 /* MinuteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA59B851DDD77BD006F48D5 /* MinuteTests.swift */; };
 		5EA59B881DDD786D006F48D5 /* Minutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA59B871DDD786D006F48D5 /* Minutes.swift */; };
+		5EA59B8A1DDD795E006F48D5 /* SecondTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA59B891DDD795E006F48D5 /* SecondTests.swift */; };
+		5EA59B8C1DDD79D6006F48D5 /* Seconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA59B8B1DDD79D6006F48D5 /* Seconds.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		5EA59B831DDD76B7006F48D5 /* Hours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hours.swift; sourceTree = "<group>"; };
 		5EA59B851DDD77BD006F48D5 /* MinuteTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinuteTests.swift; sourceTree = "<group>"; };
 		5EA59B871DDD786D006F48D5 /* Minutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minutes.swift; sourceTree = "<group>"; };
+		5EA59B891DDD795E006F48D5 /* SecondTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondTests.swift; sourceTree = "<group>"; };
+		5EA59B8B1DDD79D6006F48D5 /* Seconds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seconds.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 				5EA59B7F1DDD7543006F48D5 /* Days.swift */,
 				5EA59B831DDD76B7006F48D5 /* Hours.swift */,
 				5EA59B871DDD786D006F48D5 /* Minutes.swift */,
+				5EA59B8B1DDD79D6006F48D5 /* Seconds.swift */,
 			);
 			path = TimerKit;
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 				5EA59B7D1DDD7519006F48D5 /* DayTests.swift */,
 				5EA59B811DDD7686006F48D5 /* HourTests.swift */,
 				5EA59B851DDD77BD006F48D5 /* MinuteTests.swift */,
+				5EA59B891DDD795E006F48D5 /* SecondTests.swift */,
 			);
 			path = TimerKitTests;
 			sourceTree = "<group>";
@@ -220,6 +226,7 @@
 			files = (
 				5EA59B7C1DDD7450006F48D5 /* CountdownTimer.swift in Sources */,
 				5EA59B881DDD786D006F48D5 /* Minutes.swift in Sources */,
+				5EA59B8C1DDD79D6006F48D5 /* Seconds.swift in Sources */,
 				5EA59B841DDD76B7006F48D5 /* Hours.swift in Sources */,
 				5EA59B801DDD7543006F48D5 /* Days.swift in Sources */,
 			);
@@ -232,6 +239,7 @@
 				5EA59B861DDD77BD006F48D5 /* MinuteTests.swift in Sources */,
 				5EA59B7E1DDD7519006F48D5 /* DayTests.swift in Sources */,
 				5EA59B821DDD7686006F48D5 /* HourTests.swift in Sources */,
+				5EA59B8A1DDD795E006F48D5 /* SecondTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
