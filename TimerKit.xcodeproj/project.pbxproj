@@ -10,6 +10,8 @@
 		5E13074E1DDA8310006A61E5 /* TimerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1307441DDA8310006A61E5 /* TimerKit.framework */; };
 		5E1307551DDA8310006A61E5 /* TimerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1307471DDA8310006A61E5 /* TimerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5EA59B7C1DDD7450006F48D5 /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA59B7B1DDD7450006F48D5 /* CountdownTimer.swift */; };
+		5EA59B7E1DDD7519006F48D5 /* DayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA59B7D1DDD7519006F48D5 /* DayTests.swift */; };
+		5EA59B801DDD7543006F48D5 /* Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA59B7F1DDD7543006F48D5 /* Days.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		5E13074D1DDA8310006A61E5 /* TimerKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimerKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E1307541DDA8310006A61E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EA59B7B1DDD7450006F48D5 /* CountdownTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownTimer.swift; sourceTree = "<group>"; };
+		5EA59B7D1DDD7519006F48D5 /* DayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayTests.swift; sourceTree = "<group>"; };
+		5EA59B7F1DDD7543006F48D5 /* Days.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Days.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 				5E1307471DDA8310006A61E5 /* TimerKit.h */,
 				5E1307481DDA8310006A61E5 /* Info.plist */,
 				5EA59B7B1DDD7450006F48D5 /* CountdownTimer.swift */,
+				5EA59B7F1DDD7543006F48D5 /* Days.swift */,
 			);
 			path = TimerKit;
 			sourceTree = "<group>";
@@ -82,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				5E1307541DDA8310006A61E5 /* Info.plist */,
+				5EA59B7D1DDD7519006F48D5 /* DayTests.swift */,
 			);
 			path = TimerKitTests;
 			sourceTree = "<group>";
@@ -155,6 +161,7 @@
 					5E13074C1DDA8310006A61E5 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = QWKKLM397G;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -200,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EA59B7C1DDD7450006F48D5 /* CountdownTimer.swift in Sources */,
+				5EA59B801DDD7543006F48D5 /* Days.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EA59B7E1DDD7519006F48D5 /* DayTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,11 +374,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = QWKKLM397G;
 				INFOPLIST_FILE = TimerKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.simontsai.TimerKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -378,6 +389,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = QWKKLM397G;
 				INFOPLIST_FILE = TimerKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
