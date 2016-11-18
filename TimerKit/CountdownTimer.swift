@@ -8,27 +8,29 @@
 
 public class CountdownTimer {
   
-  private let duration: Duration
+  private let countdownTimer: STCountdownTimer
   
-  public init(_ duration: Duration) {
+  public convenience init(_ duration: Duration) {
     
-    self.duration = duration
+    self.init(OneOffCountdownTimer(duration))
+    
+  }
+  
+  private init(_ countdownTimer: STCountdownTimer) {
+    
+    self.countdownTimer = countdownTimer
     
   }
   
   public func start(completion: @escaping () -> Void) {
     
-    Timer.scheduledTimer(withTimeInterval: duration.timeInterval, repeats: false, block: { _ in
-      
-      completion()
-      
-    })
+    countdownTimer.start(completion: completion)
     
   }
   
   public func reset() -> CountdownTimer {
     
-    return CountdownTimer(duration)
+    return CountdownTimer(countdownTimer.reset())
     
   }
   
@@ -37,5 +39,13 @@ public class CountdownTimer {
 public protocol Duration {
   
   var timeInterval: TimeInterval { get }
+  
+}
+
+protocol STCountdownTimer {
+  
+  func start(completion: @escaping () -> Void)
+  
+  func reset() -> STCountdownTimer
   
 }
