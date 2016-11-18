@@ -20,6 +20,7 @@
 		5EA59B8C1DDD79D6006F48D5 /* Seconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA59B8B1DDD79D6006F48D5 /* Seconds.swift */; };
 		5EA59B8E1DDD7BD9006F48D5 /* TotalDurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA59B8D1DDD7BD9006F48D5 /* TotalDurationTests.swift */; };
 		5EA59B901DDD7CBC006F48D5 /* TotalDuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA59B8F1DDD7CBC006F48D5 /* TotalDuration.swift */; };
+		5EA59B921DDD7D9D006F48D5 /* CountdownTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA59B911DDD7D9D006F48D5 /* CountdownTimerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5EA59B8B1DDD79D6006F48D5 /* Seconds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seconds.swift; sourceTree = "<group>"; };
 		5EA59B8D1DDD7BD9006F48D5 /* TotalDurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalDurationTests.swift; sourceTree = "<group>"; };
 		5EA59B8F1DDD7CBC006F48D5 /* TotalDuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalDuration.swift; sourceTree = "<group>"; };
+		5EA59B911DDD7D9D006F48D5 /* CountdownTimerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownTimerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				5E1307541DDA8310006A61E5 /* Info.plist */,
+				5EA59B911DDD7D9D006F48D5 /* CountdownTimerTests.swift */,
 				5EA59B7D1DDD7519006F48D5 /* DayTests.swift */,
 				5EA59B811DDD7686006F48D5 /* HourTests.swift */,
 				5EA59B851DDD77BD006F48D5 /* MinuteTests.swift */,
@@ -246,6 +249,7 @@
 				5EA59B861DDD77BD006F48D5 /* MinuteTests.swift in Sources */,
 				5EA59B7E1DDD7519006F48D5 /* DayTests.swift in Sources */,
 				5EA59B8E1DDD7BD9006F48D5 /* TotalDurationTests.swift in Sources */,
+				5EA59B921DDD7D9D006F48D5 /* CountdownTimerTests.swift in Sources */,
 				5EA59B821DDD7686006F48D5 /* HourTests.swift in Sources */,
 				5EA59B8A1DDD795E006F48D5 /* SecondTests.swift in Sources */,
 			);
