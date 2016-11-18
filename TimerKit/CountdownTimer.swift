@@ -26,6 +26,12 @@ public class CountdownTimer {
     
   }
   
+  public func reset() -> CountdownTimer {
+    
+    return CountdownTimer(duration)
+    
+  }
+  
 }
 
 public protocol Duration {
