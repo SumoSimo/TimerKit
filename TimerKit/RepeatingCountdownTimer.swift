@@ -42,6 +42,8 @@ extension RepeatingCountdownTimer: STCountdownTimer {
       
       if self?.timesFired == self?.fireCount {
         
+        // Invalidated before calling the completion block because the client expects the countdown timer
+        // to no longer be running by the time they acccess 'timer' in the completion closure
         timer.invalidate()
         
       }
