@@ -12,6 +12,16 @@ import XCTest
 
 class CountdownTimerTests: XCTestCase {
   
+  func testStartedCountdownTimerIsRunning() {
+    
+    let countdownTimer = CountdownTimer(Seconds(0.5))
+    
+    countdownTimer.start()
+    
+    XCTAssertTrue(countdownTimer.isRunning)
+    
+  }
+  
   func testCountdownTimerFiresOnlyOnce() {
     
     let expectation = self.expectation(description: "The countdown timer fires only once")

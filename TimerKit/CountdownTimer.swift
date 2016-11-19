@@ -28,7 +28,7 @@ public class CountdownTimer {
     
   }
   
-  public func start(completion: @escaping (CountdownTimer) -> Void) {
+  public func start(completion: @escaping (CountdownTimer) -> Void = { _ in }) {
     
     countdownTimer.start(completion: { [weak self] in
       
