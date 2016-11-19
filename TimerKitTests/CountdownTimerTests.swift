@@ -14,11 +14,11 @@ class CountdownTimerTests: XCTestCase {
   
   func testCountdownTimerFires() {
     
-    let theExpectation = expectation(description: "The countdown timer fires")
+    let expectation = self.expectation(description: "The countdown timer fires")
     
     CountdownTimer(TotalDuration([Seconds(0.5)])).start(completion: {
       
-      theExpectation.fulfill()
+      expectation.fulfill()
       
     })
     
