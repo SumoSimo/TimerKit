@@ -16,6 +16,12 @@ public class CountdownTimer {
     
   }
   
+  public convenience init(_ duration: Duration, fireCount: Int) {
+    
+    self.init(RepeatingCountdownTimer(duration, fireCount: fireCount))
+    
+  }
+  
   private init(_ countdownTimer: STCountdownTimer) {
     
     self.countdownTimer = countdownTimer

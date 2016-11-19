@@ -10,6 +10,7 @@
 		5E13074E1DDA8310006A61E5 /* TimerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1307441DDA8310006A61E5 /* TimerKit.framework */; };
 		5E1307551DDA8310006A61E5 /* TimerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1307471DDA8310006A61E5 /* TimerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E8FA90B1DDEB9F500BB8558 /* OneOffCountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FA90A1DDEB9F500BB8558 /* OneOffCountdownTimer.swift */; };
+		5E8FA90D1DDEBFEE00BB8558 /* RepeatingCountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FA90C1DDEBFEE00BB8558 /* RepeatingCountdownTimer.swift */; };
 		5EA59B7C1DDD7450006F48D5 /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA59B7B1DDD7450006F48D5 /* CountdownTimer.swift */; };
 		5EA59B7E1DDD7519006F48D5 /* DayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA59B7D1DDD7519006F48D5 /* DayTests.swift */; };
 		5EA59B801DDD7543006F48D5 /* Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA59B7F1DDD7543006F48D5 /* Days.swift */; };
@@ -41,6 +42,7 @@
 		5E13074D1DDA8310006A61E5 /* TimerKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimerKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E1307541DDA8310006A61E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E8FA90A1DDEB9F500BB8558 /* OneOffCountdownTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneOffCountdownTimer.swift; sourceTree = "<group>"; };
+		5E8FA90C1DDEBFEE00BB8558 /* RepeatingCountdownTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatingCountdownTimer.swift; sourceTree = "<group>"; };
 		5EA59B7B1DDD7450006F48D5 /* CountdownTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownTimer.swift; sourceTree = "<group>"; };
 		5EA59B7D1DDD7519006F48D5 /* DayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayTests.swift; sourceTree = "<group>"; };
 		5EA59B7F1DDD7543006F48D5 /* Days.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Days.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				5E1307481DDA8310006A61E5 /* Info.plist */,
 				5EA59B7B1DDD7450006F48D5 /* CountdownTimer.swift */,
 				5E8FA90A1DDEB9F500BB8558 /* OneOffCountdownTimer.swift */,
+				5E8FA90C1DDEBFEE00BB8558 /* RepeatingCountdownTimer.swift */,
 				5EA59B7F1DDD7543006F48D5 /* Days.swift */,
 				5EA59B831DDD76B7006F48D5 /* Hours.swift */,
 				5EA59B871DDD786D006F48D5 /* Minutes.swift */,
@@ -237,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EA59B7C1DDD7450006F48D5 /* CountdownTimer.swift in Sources */,
+				5E8FA90D1DDEBFEE00BB8558 /* RepeatingCountdownTimer.swift in Sources */,
 				5EA59B881DDD786D006F48D5 /* Minutes.swift in Sources */,
 				5EA59B901DDD7CBC006F48D5 /* TotalDuration.swift in Sources */,
 				5EA59B8C1DDD79D6006F48D5 /* Seconds.swift in Sources */,

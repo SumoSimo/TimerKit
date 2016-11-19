@@ -86,4 +86,40 @@ class CountdownTimerTests: XCTestCase {
     
   }
   
+  func testCountdownTimerFiresThreeTimes() {
+    
+    let expectation = self.expectation(description: "The countdown timer fires 3 times")
+    
+    var timesFired = 0
+    
+    let countdownTimer = CountdownTimer(Seconds(0.2), fireCount: 3)
+    
+    countdownTimer.start(completion: { countdownTimer in
+      
+      timesFired += 1
+      
+      if !countdownTimer.isRunning {
+        
+        expectation.fulfill()
+        
+      }
+      
+    })
+    
+    waitForExpectations(timeout: 1.0, handler: { _ in
+    
+      if timesFired == 3 {
+        
+        XCTAssertTrue(true)
+        
+      } else {
+        
+        XCTFail("The countdown timer did not fire 3 times like it should have. Actual times fired: \(timesFired)")
+        
+      }
+      
+    })
+    
+  }
+  
 }
