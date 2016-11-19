@@ -22,6 +22,34 @@ class CountdownTimerTests: XCTestCase {
     
   }
   
+  func testCountdownTimerThatHasFiredIsNoLongerRunning() {
+    
+    let expectation = self.expectation(description: "A countdown timer that has fired should no longer be running")
+    
+    let countdownTimer = CountdownTimer(Seconds(0.5))
+    
+    countdownTimer.start(completion: { countdownTimer in
+      
+      expectation.fulfill()
+      
+    })
+    
+    waitForExpectations(timeout: 1.0, handler: { _ in
+    
+      if countdownTimer.isRunning {
+        
+        XCTFail("The countdown timer is still running after firing")
+        
+      } else {
+        
+        XCTAssertTrue(true)
+        
+      }
+      
+    })
+    
+  }
+  
   func testCountdownTimerFiresOnlyOnce() {
     
     let expectation = self.expectation(description: "The countdown timer fires only once")
