@@ -12,7 +12,7 @@ public class CountdownTimer {
   
   public convenience init(_ duration: Duration) {
     
-    self.init(OneOffCountdownTimer(duration))
+    self.init(duration, fireCount: 1)
     
   }
   
