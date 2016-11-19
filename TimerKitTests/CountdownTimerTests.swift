@@ -16,7 +16,7 @@ class CountdownTimerTests: XCTestCase {
     
     let expectation = self.expectation(description: "The countdown timer fires")
     
-    CountdownTimer(TotalDuration([Seconds(0.5)])).start(completion: {
+    CountdownTimer(Seconds(0.5)).start(completion: {
       
       expectation.fulfill()
       
