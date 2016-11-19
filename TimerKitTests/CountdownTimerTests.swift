@@ -12,21 +12,35 @@ import XCTest
 
 class CountdownTimerTests: XCTestCase {
   
-  func testCountdownTimerFires() {
+  func testCountdownTimerFiresOnlyOnce() {
     
-    let expectation = self.expectation(description: "The countdown timer fires")
+    let expectation = self.expectation(description: "The countdown timer fires only once")
     
-    CountdownTimer(Seconds(0.5)).start(completion: {
+    var timesFired = 0
+    
+    let countdownTimer = CountdownTimer(Seconds(0.5))
+    
+    countdownTimer.start(completion: { countdownTimer in
       
-      expectation.fulfill()
+      timesFired += 1
+      
+      if !countdownTimer.isRunning {
+        
+        expectation.fulfill()
+        
+      }
       
     })
     
-    waitForExpectations(timeout: 1.0, handler: { error in
+    waitForExpectations(timeout: 1.0, handler: { _ in
       
-      if let error = error {
+      if timesFired == 1 {
         
-        XCTFail("Error: \(error)")
+        XCTAssertTrue(true)
+        
+      } else {
+        
+        XCTFail("The countdown timer fired more than once, \(timesFired) times specifically")
         
       }
       

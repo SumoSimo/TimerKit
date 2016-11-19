@@ -10,6 +10,8 @@ class OneOffCountdownTimer {
   
   fileprivate let duration: Duration
   
+  fileprivate var timer: Timer?
+  
   init(_ duration: Duration) {
     
     self.duration = duration
@@ -20,9 +22,20 @@ class OneOffCountdownTimer {
 
 extension OneOffCountdownTimer: STCountdownTimer {
   
+  var isRunning: Bool {
+    
+    return timer?.isValid ?? false
+    
+  }
+  
   func start(completion: @escaping () -> Void) {
     
-    Timer.scheduledTimer(withTimeInterval: duration.timeInterval, repeats: false, block: { _ in
+    timer = Timer.scheduledTimer(withTimeInterval: duration.timeInterval, repeats: false, block: { timer in
+      
+      // The timer at this point still returns true for 'isValid', though technically, the timer is no longer
+      // capable of being fired, even at this point in the block. Seems like Apple sets 'isValid' to false
+      // after the block instead of before, which seems a little off.
+      timer.invalidate()
       
       completion()
       

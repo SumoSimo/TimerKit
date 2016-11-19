@@ -22,9 +22,25 @@ public class CountdownTimer {
     
   }
   
-  public func start(completion: @escaping () -> Void) {
+  public var isRunning: Bool {
     
-    countdownTimer.start(completion: completion)
+    return countdownTimer.isRunning
+    
+  }
+  
+  public func start(completion: @escaping (CountdownTimer) -> Void) {
+    
+    countdownTimer.start(completion: { [weak self] in
+      
+      guard let `self` = self else {
+        
+        return
+        
+      }
+      
+      completion(self)
+      
+    })
     
   }
   
@@ -43,6 +59,8 @@ public protocol Duration {
 }
 
 protocol STCountdownTimer {
+  
+  var isRunning: Bool { get }
   
   func start(completion: @escaping () -> Void)
   
