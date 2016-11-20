@@ -6,7 +6,7 @@
 //  Copyright © 2016 Simon Tsai. All rights reserved.
 //
 
-class OneOffCountdownTimer {
+final class OneOffCountdownTimer {
   
   fileprivate let duration: Duration
   
@@ -43,7 +43,7 @@ extension OneOffCountdownTimer: STCountdownTimer {
     
   }
   
-  func reset() -> STCountdownTimer {
+  func reset() -> OneOffCountdownTimer {
     
     return OneOffCountdownTimer(duration)
     

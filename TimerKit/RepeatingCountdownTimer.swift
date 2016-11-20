@@ -6,7 +6,7 @@
 //  Copyright © 2016 Simon Tsai. All rights reserved.
 //
 
-class RepeatingCountdownTimer {
+final class RepeatingCountdownTimer {
   
   fileprivate let duration: Duration
   
@@ -54,7 +54,7 @@ extension RepeatingCountdownTimer: STCountdownTimer {
     
   }
   
-  func reset() -> STCountdownTimer {
+  func reset() -> RepeatingCountdownTimer {
     
     return RepeatingCountdownTimer(duration, fireCount: fireCount)
     

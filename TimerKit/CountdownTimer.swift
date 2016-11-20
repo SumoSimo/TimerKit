@@ -70,6 +70,6 @@ protocol STCountdownTimer {
   
   func start(completion: @escaping () -> Void)
   
-  func reset() -> STCountdownTimer
+  func reset() -> Self
   
 }
