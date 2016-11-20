@@ -14,7 +14,7 @@ class CountdownTimerTests: XCTestCase {
   
   func testStartedCountdownTimerIsRunning() {
     
-    let countdownTimer = CountdownTimer(Seconds(0.5))
+    let countdownTimer = CountdownTimer(Seconds(0.001))
     
     countdownTimer.start()
     
@@ -26,7 +26,7 @@ class CountdownTimerTests: XCTestCase {
     
     let expectation = self.expectation(description: "A countdown timer that has fired should no longer be running")
     
-    let countdownTimer = CountdownTimer(Seconds(0.5))
+    let countdownTimer = CountdownTimer(Seconds(0.001))
     
     countdownTimer.start(completion: { countdownTimer in
       
@@ -56,7 +56,7 @@ class CountdownTimerTests: XCTestCase {
     
     var timesFired = 0
     
-    let countdownTimer = CountdownTimer(Seconds(0.5))
+    let countdownTimer = CountdownTimer(Seconds(0.001))
     
     countdownTimer.start(completion: { countdownTimer in
       
@@ -92,7 +92,7 @@ class CountdownTimerTests: XCTestCase {
     
     var timesFired = 0
     
-    let countdownTimer = CountdownTimer(Seconds(0.2), fireCount: 3)
+    let countdownTimer = CountdownTimer(Seconds(0.001), fireCount: 3)
     
     countdownTimer.start(completion: { countdownTimer in
       
